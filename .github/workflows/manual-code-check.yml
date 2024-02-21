@@ -1,0 +1,14 @@
+name: Code check workflow
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: mit10 CI action
+        uses: turmagangtech/mit10s-action@v0.2.2
