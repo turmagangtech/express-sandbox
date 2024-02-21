@@ -4,6 +4,7 @@
   "description": "Sandbox CRUD Node Express SQLite API for testing different concepts and tools",
   "main": "index.js",
   "scripts": {
+    "dev": "node index.js --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -21,5 +22,11 @@
     "express": "^4.18.2",
     "knex": "^3.1.0",
     "sqlite3": "^5.1.7"
+  },
+  "devDependencies": {
+    "@types/swagger-jsdoc": "^6.0.4",
+    "@types/swagger-ui-express": "^4.1.6",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.0"
   }
 }
