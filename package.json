@@ -1,0 +1,25 @@
+{
+  "name": "express-sandbox",
+  "version": "0.1.0",
+  "description": "Sandbox CRUD Node Express SQLite API for testing different concepts and tools",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/turmagangtech/express-sandbox.git"
+  },
+  "author": "turmagangtech",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/turmagangtech/express-sandbox/issues"
+  },
+  "homepage": "https://github.com/turmagangtech/express-sandbox#readme",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "express": "^4.18.2",
+    "knex": "^3.1.0",
+    "sqlite3": "^5.1.7"
+  }
+}

@@ -128,3 +128,8 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+# the project-specific files and folders to skip
+database.db
+*.sqlite3
+.idea
