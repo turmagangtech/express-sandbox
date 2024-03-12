@@ -1,0 +1,55 @@
+{
+  "$schema": "https://raw.githubusercontent.com/oasis-tcs/sarif-spec/master/Schemata/sarif-schema-2.1.0.json",
+  "version": "2.1.0",
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "name": "mit10s",
+          "semanticVersion": "0.2.2"
+        }
+      },
+      "results": [
+        {
+          "ruleId": "MIT0017S",
+          "ruleIndex": 0,
+          "level": "warning",
+          "message": {
+            "text": "Unfiltered data is being sent to the client, which might result in sensitive data being exposed."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "index.js",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 119,
+                  "endLine": 123
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "rules": [
+        {
+          "id": "MIT0017S",
+          "shortDescription": {
+            "text": "Avoid sending unfiltered data to the client."
+          },
+          "fullDescription": {
+            "text": "Filter the user data before sending it to the client, and avoid sending sensitive data such as hashed passwords or private keys."
+          },
+          "help": {
+            "text": "Update the query to select only the columns needed. For example: db.select('id', 'name', 'email').from('users')"
+          },
+          "defaultConfiguration": {
+            "level": "warning"
+          }
+        }
+      ]
+    }
+  ]
+}
