@@ -1,2 +1,3 @@
 # express-sandbox
-Your typical Node.js API
+
+Your typical CRUD Node.js API with basic access to SQLite as a database
